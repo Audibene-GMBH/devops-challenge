@@ -13,4 +13,5 @@ Please try to complete the below requirements and send us a link to your public 
   * `/images`
   * `/assets` 
  
- 
+ ## References
+ Provided static site was obtained from [here](https://github.com/cloudacademy/static-website-example)
