@@ -4,7 +4,7 @@
 
 Welcome to Audibene's DevOps challenge :)
 
-Please try to complete the below requirements and send us a link to your public github repo containing the solution code.
+Please try to complete the below requirements and send us a link to your public github repo containing the solution code or alternatively give us your GitHub username so we can grant you permissions to this repository.
 
 ## Requirements
 
