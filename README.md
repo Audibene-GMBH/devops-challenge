@@ -4,19 +4,22 @@
 
 Welcome to Audibene's DevOps challenge :)
 
-Please try to complete the below requirements and send us a link to your public github repo containing the solution code or alternatively give us your GitHub username so we can grant you permissions to this repository.
+Please try to complete the below requirements and send us a link to your public github repo containing the solution code!
 
 ## Requirements
 
-* Using terraform, create a cloudfront distribution and corresponding S3 bucket to serve the provided code as a default behavior
-* Using the same cloudfront distribution, provide us with 2 routes (hint: path patterns) through which we can load the contents of the corresponding folders
-  * `/images`
-  * `/assets`
+Please create a Jenkins pipeline (using groovy) that achieves the following behaviors on the corresponding branches:
+
+* **Pull Request Commits:** triggers tests
+* **Commits/Merges into `develop`:** run tests, docker build, push built image to ECR, deploy code to kubernetes and rollback in case of failure
+* **Commits/Merges into `master`:** promotes code to master branch
 
 Things to keep in mind:
 
-* If any specific details are ommited from the requirements, feel free to make your own assumptions and detail them in the README.md of your repo
-* Please include the URL to your cloudfront distribution in your README.md (you don't need to buy a domain, just share the cloudfront URL with us)
- 
- ## References
- Provided static site was obtained from [here](https://github.com/cloudacademy/static-website-example)
+* If any specific details are ommited from the requirements, feel free to make your own assumptions and detail them in the README.md of your repository
+* Feel free to use any opensource code to illustrate the behavior of your pipeline
+
+## Expectations
+By the end of your task, we expect a link to your public github repo that contains:
+* A `Jenkinsfile` containing your pipeline code
+* A description of all the assumptions that you have made in building the pipeline in a README.md
