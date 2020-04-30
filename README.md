@@ -11,7 +11,7 @@ Please try to complete the below requirements and send us a link to your public 
 Please create a Jenkins pipeline (using groovy) that achieves the following behaviors on the corresponding branches:
 
 * **Pull Request Commits:** triggers tests
-* **Commits/Merges into `develop`:** run tests, docker build, push built image to ECR, deploy code to kubernetes and rollback in case of failure
+* **Commits/Merges into `develop`:** docker build, push built image to registry and deploy code to kubernetes 
 * **Commits/Merges into `master`:** promotes code to master branch
 
 Things to keep in mind:
